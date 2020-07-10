@@ -1,0 +1,46 @@
+@import './colors.scss';
+
+ul, ol {
+  li {
+    padding: 4px 0;
+  }
+}
+
+body {
+  color: $gray-darkest;
+  font-family: $standard-font;
+}
+
+.layout-container {
+  margin: 0 auto;
+  max-width: 1100px;
+  min-width: 600px;
+  padding: 50px;
+  width: auto;
+}
+
+.block {
+  padding: 20px 0;
+}
+
+//the reason i placed this in general is because styling a general component like a button should live more centrally
+.button {
+  border: 1px solid $green;
+  height: 40px;
+  line-height: 40px;
+  color: $green;
+  padding: 0 25px;
+  border-radius: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    border-width: 2px;
+    line-height: 38px;
+  }
+
+  &:active {
+    border-width: 3px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+}
